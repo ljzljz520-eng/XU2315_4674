@@ -36,8 +36,9 @@ func (s *Service) Search(query string) SearchResult {
 		}
 	}
 	if len(matches) == 0 {
-		var grouped map[string][]EquipmentItem
-		grouped["基础装备"] = s.repository.BasicEquipment()
+		grouped := map[string][]EquipmentItem{
+			"基础装备": s.repository.BasicEquipment(),
+		}
 		return SearchResult{Query: query, Articles: matches, Recommended: grouped, StarterListPath: "/equipment-basics"}
 	}
 	return SearchResult{Query: query, Articles: matches, Recommended: map[string][]EquipmentItem{}, StarterListPath: "/equipment-basics"}
