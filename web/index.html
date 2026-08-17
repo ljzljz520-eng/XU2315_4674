@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>山地救援装备笔记</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="hero">
+      <p class="eyebrow">山地救援装备笔记</p>
+      <h1>把每一次行动，写成下一次出发的依据</h1>
+      <p>绳索、通信、保暖、导航和案例复盘，面向山地队伍的实用记录。</p>
+      <form id="search-form">
+        <label for="search-input">搜索装备笔记</label>
+        <div class="search-row">
+          <input id="search-input" name="q" placeholder="例如：锚点、通联、导航" autocomplete="off">
+          <button type="submit">搜索</button>
+        </div>
+      </form>
+    </header>
+    <main>
+      <section id="status" aria-live="polite"></section>
+      <section>
+        <h2>安全提示</h2>
+        <ul id="safety"></ul>
+      </section>
+      <section>
+        <h2>精选文章</h2>
+        <div id="featured" class="article-grid"></div>
+      </section>
+      <section>
+        <h2>作者团队</h2>
+        <ul id="team" class="team-list"></ul>
+      </section>
+    </main>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

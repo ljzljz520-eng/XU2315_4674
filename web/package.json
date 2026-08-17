@@ -1,0 +1,9 @@
+{
+  "name": "mountain-rescue-notes-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mountain rescue equipment notes interface",
+  "scripts": {
+    "build": "node build.mjs"
+  }
+}

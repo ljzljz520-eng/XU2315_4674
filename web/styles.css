@@ -1,0 +1,27 @@
+:root {
+  color: #20302f;
+  background: #f2f5f1;
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+body { margin: 0; }
+.hero { background: #24433f; color: #f5f8f1; padding: 4rem max(1.5rem, calc((100vw - 72rem) / 2)); }
+.hero h1 { max-width: 42rem; font-size: clamp(2rem, 5vw, 4rem); line-height: 1.1; margin: 0.5rem 0 1rem; }
+.hero > p { max-width: 42rem; }
+.eyebrow, .section { color: #b9d77b; font-weight: 700; letter-spacing: 0.08em; }
+form { margin-top: 2rem; max-width: 36rem; }
+label { display: block; margin-bottom: 0.4rem; }
+.search-row { display: flex; gap: 0.5rem; }
+input, button { font: inherit; border-radius: 4px; padding: 0.75rem 1rem; }
+input { flex: 1; border: 1px solid #b7c8bc; }
+button { border: 0; background: #b9d77b; color: #20302f; font-weight: 700; cursor: pointer; }
+main { max-width: 72rem; margin: auto; padding: 2rem 1.5rem 4rem; }
+section { margin: 2rem 0 3rem; }
+#status { min-height: 2rem; }
+ul { padding-left: 1.25rem; }
+.article-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); gap: 1rem; }
+article { background: white; border: 1px solid #d8e1da; padding: 1.25rem; border-radius: 6px; }
+article h3 { margin: 0.25rem 0 0.5rem; }
+.team-list { display: flex; flex-wrap: wrap; gap: 0.75rem 2rem; list-style: none; padding: 0; }
+@media (max-width: 36rem) { .search-row { flex-direction: column; } }
